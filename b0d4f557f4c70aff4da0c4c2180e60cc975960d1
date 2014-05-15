@@ -1,0 +1,8 @@
+Change-Id: Ib0d4f557f4c70aff4da0c4c2180e60cc975960d1
+Code-Review+2: Russell Sim <russell.sim@gmail.com>
+Verified+1: Russell Sim <russell.sim@gmail.com>
+Submitted-by: Russell Sim <russell.sim@gmail.com>
+Submitted-at: Thu, 15 May 2014 17:08:53 +1000
+Reviewed-on: https://review.rc.nectar.org.au/1334
+Project: NeCTAR-RC/puppet-patchman
+Branch: refs/meta/config
