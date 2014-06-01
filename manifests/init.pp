@@ -10,7 +10,7 @@ class patchman($server, $port) {
     ensure => directory,
     owner  => root,
     group  => root,
-    mode   => '0750',
+    mode   => '0755',
   }
 
   file { '/etc/patchman/conf.d':
