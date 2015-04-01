@@ -9,7 +9,7 @@ class patchman::repo {
   }
 
   apt::key { 'patchman':
-    key         => '0412F522',
+    key         => '198AF25376E7ACD8E123B0CDD30FB02B0412F522',
     key_server  => 'pgp.mit.edu',
     key_options => $key_options,
   }
