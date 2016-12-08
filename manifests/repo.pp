@@ -9,16 +9,15 @@ class patchman::repo {
   }
 
   apt::key { 'patchman':
-    key         => '198AF25376E7ACD8E123B0CDD30FB02B0412F522',
-    key_server  => 'pgp.mit.edu',
-    key_options => $key_options,
+    id      => '198AF25376E7ACD8E123B0CDD30FB02B0412F522',
+    server  => 'pgp.mit.edu',
+    options => $key_options,
   }
 
   apt::source { 'patchman':
     location    => 'http://repo.openbytes.ie/ubuntu',
     release     => 'trusty',
     repos       => 'main',
-    include_src => false,
   }
 }
 
