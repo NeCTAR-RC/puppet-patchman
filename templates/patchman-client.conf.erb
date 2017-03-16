@@ -1,16 +1,16 @@
 # Managed by PUPPET
 
 # Patchman server url
-server=<%= server %>
+server=<%= @server %>
 
 # Patchman server http(s) port
-port=<%= port %>
+port=<%= @port %>
 
 # Options to curl
 curl_options="--insecure --connect-timeout 60 --max-time 300"
 
 # Space delimited tags to send
-tags=<%= environment %>
+tags=<%= @environment %>
 
 # Does the client output a report of the upload (e.g. for cronjob output)
 report=0
