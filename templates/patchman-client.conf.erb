@@ -10,7 +10,7 @@ port=<%= @port %>
 curl_options="--insecure --connect-timeout 60 --max-time 300"
 
 # Space delimited tags to send
-tags=<%= @environment %>
+tags=<%= @config_environment %>
 
 # Does the client output a report of the upload (e.g. for cronjob output)
 report=0

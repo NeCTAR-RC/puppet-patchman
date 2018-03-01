@@ -2,6 +2,8 @@
 
 class patchman::client($server, $port) inherits patchman {
 
+  $config_environment = hiera('puppet::config_environment', $::environment)
+
   $dependencies = ['update-notifier-common', 'curl']
 
   package { $dependencies:
