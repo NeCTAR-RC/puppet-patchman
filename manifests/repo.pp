@@ -5,7 +5,7 @@ class patchman::repo {
   if $::http_proxy and str2bool($::rfc1918_gateway) {
     $key_options = "http-proxy=${::http_proxy}"
   } else {
-    $key_options = false
+    $key_options = undef
   }
 
   apt::key { 'patchman':
